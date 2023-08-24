@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Web Page</title>
+    <title>Basic Image Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* White background */
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust to your preference */
+            flex-direction: column;
+        }
+        .image {
+            max-width: 100%;
+            max-height: 70%;
+            margin-bottom: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #3498db; /* Blue color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button + .button {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Basic Web Page</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is a simple example of an HTML page.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 My Basic Web Page. All rights reserved.</p>
-    </footer>
+    <div class="content">
+        <img class="image" src="https://raw.githubusercontent.com/username/repo/main/image.jpg" alt="An Example Image">
+        <button class="button">Forums</button>
+        <button class="button">Discord</button>
+    </div>
 </body>
 </html>
